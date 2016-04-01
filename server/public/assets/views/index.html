@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Hero Tracker!</title>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factory.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers.js"></script>
+
+  </head>
+  <body>
+    <h1>Welcome to the SuperHero Tracker!</h1>
+    <ul>
+      <li>
+        <a href="#view">View Heroes</a>
+        <a href="#add">Add a Hero</a>
+      </li>
+    </ul>
+    <main ng-view=""></main>
+  </body>
+</html>

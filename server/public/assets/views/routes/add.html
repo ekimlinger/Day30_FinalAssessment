@@ -1,0 +1,26 @@
+<h2>Enter a New Hero</h2>
+<form ng-submit="submit(hero)">
+
+  <label for="alias">Alias: </label>
+  <input ng-model="hero.alias" name="alias">
+
+  <label for="first_name">First Name: </label>
+  <input ng-model="hero.first_name" name="first_name">
+
+  <label for="last_name">Last Name: </label>
+  <input ng-model="hero.last_name" name="last_name">
+
+  <label for="city">City: </label>
+  <input ng-model="hero.city" name="city">
+
+  <!-- Super Power Dropdown list -->
+
+  <select ng-model="hero.power_name">
+    <option ng-repeat="power in power_name" >
+      {{power}}
+    </option>
+  </select>
+
+  <input type="submit" value="Submit Hero" />
+
+</form>

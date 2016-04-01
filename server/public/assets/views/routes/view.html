@@ -1,0 +1,10 @@
+<h2>Viewing All Super Heroes</h2>
+
+<ul ng-repeat="hero in heroesList.response">
+  <li><h3>{{hero.alias}}</h3>
+    <p>
+      {{hero.first_name}} {{hero.last_name}}, City: {{hero.city}}, Power: {{hero.power_name}}
+    </p>
+    <button ng-click="deleteHero(hero)">Remove Hero</button>
+  </li>
+</ul>
